@@ -72,7 +72,7 @@ const kEmptySlots = (flowers, k) => {
 
     // check if there exist a current bloom (element is equal to 1) in flowerStatus with pointer2
     if (pointer2 < flowerStatus.length && flowerStatus[pointer2] === 1) {
-      // go to helper function to check if all numbers in between pointer1 and target are zeroes
+      // go to helper function to check if all numbers in between pointer2 and target are zeroes
       if (flowersInBetween(flowerStatus, target + 1, pointer2 - 1)) {
         // return current day plus 1 since current index starts at 0
         return i + 1;
